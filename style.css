@@ -1,0 +1,67 @@
+.wrapper {
+    background-image: url("https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?w=740&t=st=1674210804~exp=1674211404~hmac=e1807e49d5f3433a36cf9b5071bbc1540d81749810cb76e817a117627729fdf5");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.text{
+ font-size: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: 1px;
+ color: rgb(181, 237, 228, 0.9);
+ border-width: 4px;
+ border-style: solid;
+ border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+summary:hover{
+    color: deepskyblue;
+}
+
+#poor-joke:hover{
+ font-size: 30px;
+ color: #f1f832;
+}
+
+.who{
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+details p{
+    background-color: rgb(55, 108, 108, 0.1);;
+    color:rgb(103, 243, 220);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media only screen and (max-width: 640px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+  };
+    
+  
